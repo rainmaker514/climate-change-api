@@ -6,6 +6,7 @@ const { response } = require('express')
 const app = express()
 
 const articles = []
+const sources = []
 const newsSites = [
     {
         name: 'bbc',
@@ -64,7 +65,7 @@ newsSites.forEach(newsSites => {
     })
 })
 
-app.listen(PORT, () => console.log('Server running on PORT ${PORT}'))
+app.listen(PORT, () => console.log(`Server running on PORT ${PORT}`))
 
 app.get('/', (req, res) => {
     res.json('Welcome to my Climate Change News API')
@@ -73,6 +74,16 @@ app.get('/', (req, res) => {
 app.get('/news', (req, res) => {
     res.json(articles)
 })
+
+app.get('/news/sources', (req, res) => {
+    newsSites.forEach(newsSites => {
+        sources.push({
+            name: newsSites.name,
+            url: newsSites.address
+        })
+    })
+    res.json(sources)
+}) 
 
 app.get('/news/:newsSiteId', (req, res) => {
     const newsSiteId = req.params.newsSiteId
