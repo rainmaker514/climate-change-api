@@ -1,5 +1,4 @@
-// const PORT = process.env.PORT || 8000
-const PORT = 'https://climate-change-api-dzwj.onrender.com/'
+const PORT = process.env.PORT || 8000
 const express = require('express')
 const axios = require('axios')
 const cheerio = require('cheerio')
