@@ -8,6 +8,7 @@ https://climate-change-api-dzwj.onrender.com/
 - Cheerio *v1.0.0-rc.12*
 - Express *v4.18.2*
 - Nodemon *v2.0.20*
+## Installation
 ## Local Demo
 1. To run, enter ```node index.js``` in terminal
 2. Go to browser and enter ```localhost:8000```
