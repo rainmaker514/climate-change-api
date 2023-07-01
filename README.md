@@ -9,6 +9,7 @@ https://climate-change-api-dzwj.onrender.com/
 - Express *v4.18.2*
 - Nodemon *v2.0.20*
 ## Installation
+1. Install [Node.js](https://nodejs.org/en)
 ## Local Demo
 1. To run, enter ```node index.js``` in terminal
 2. Go to browser and enter ```localhost:8000```
